@@ -1,8 +1,12 @@
 import QRCodeStyling from 'qr-code-styling'
 import { useEffect, useState } from 'react'
 
-export const QrCode = (props: { text: string }) => {
-  const [src, setSrc] = useState('https://veltix.app')
+type QrCodeProps = {
+  text: string
+}
+
+export const QrCode = (props: QrCodeProps) => {
+  const [src, setSrc] = useState(props.text)
 
   useEffect(() => {
     const qrCodeStyling = new QRCodeStyling({
@@ -21,3 +25,7 @@ export const QrCode = (props: { text: string }) => {
 
   return <div>{src ? <img src={src} alt="QR Code" /> : <div>Loading...</div>}</div>
 }
+
+QrCode.defaultProps = {
+  text: "https://veltix.app",
+};
