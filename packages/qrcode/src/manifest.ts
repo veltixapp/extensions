@@ -3,7 +3,7 @@ import { QrCode } from "./qrcode";
 import { Veltix } from "@veltix/types";
 
 export const manifest: Veltix.Manifest = {
-  type: "qrcode",
+  name: "qrcode",
   title: "QR Code",
   description: "QR Code",
   defaultProps: {},

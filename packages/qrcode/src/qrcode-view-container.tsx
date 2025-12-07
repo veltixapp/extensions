@@ -7,17 +7,17 @@ export const QrCodeViewContainer = ({ context }: { context: Veltix.Context }) =>
 
   const upsertQrCode = (base64: string) => {
     // create
-    context.editor.add(
+    context.editor.createNode(
       {
+        position: {
+          width: 260,
+          height: 260,
+        },
         type: 'qrcode',
         props: {
           text,
           src: base64
         }
-      },
-      {
-        width: 260,
-        height: 260
       }
     )
   }

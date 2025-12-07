@@ -3,10 +3,13 @@ const path = require('path');
 module.exports = {
   context: __dirname,
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
-  entry: './src/index.tsx',
+  entry: {
+    index: './src/index.tsx',
+    qrcode: './src/package.ts'
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'index.js',
+    filename: '[name].js',
     library: {
       type: 'system'
     }
