@@ -23,7 +23,7 @@ export const QrCode = (props: QrCodeProps) => {
     })
   }, [props.text])
 
-  return <div>{src ? <img src={src} alt="QR Code" /> : <div>Loading...</div>}</div>
+  return <>{src ? <img src={src} alt="QR Code" /> : <div>Loading...</div>}</>
 }
 
 QrCode.defaultProps = {
