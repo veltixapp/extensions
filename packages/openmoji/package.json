@@ -1,0 +1,36 @@
+{
+  "name": "@veltixapp/extension-openmoji",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "webpack --config webpack.config.js && node bundle-dts.js",
+    "build:watch": "webpack --config webpack.config.js --watch",
+    "build:prod": "NODE_ENV=production webpack --config webpack.config.js && node bundle-dts.js",
+    "clean": "rm -rf dist",
+    "dev": "npm run build:watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@veltix/types": "^0.0.6",
+    "lucide-react": "^0.539.0",
+    "react": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "@types/react": "^19.1.9",
+    "dts-bundle": "^0.7.3",
+    "ts-loader": "^9.5.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.7.2",
+    "webpack": "^5.101.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "files": [
+    "dist"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@veltixapp/create",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Scaffold a new Veltix extension",
+  "bin": {
+    "veltix-ext": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "typescript": "^5.7.2"
+  }
+}
