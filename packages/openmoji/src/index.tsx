@@ -5,11 +5,19 @@ import { manifest } from './manifest'
 
 export const openmojiExtension: Veltix.Extension = {
   id: 'openmoji',
-  title: 'Openmoji',
+  title: '%title%',
   icon: BoxIcon,
   viewContainer: OpenmojiViewContainer,
-  activate: () => {},
-  components: [ manifest ]
+  activate: () => { },
+  components: [manifest],
+  locales: {
+    en: {
+      'title': 'Openmoji'
+    },
+    'zh-CN': {
+      'title': '表情'
+    }
+  }
 }
 
 export default {

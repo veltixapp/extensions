@@ -5,11 +5,19 @@ import { manifest } from './manifest'
 
 export const qrcodeExtension: Veltix.Extension = {
   id: 'qrcode',
-  title: 'QR Code',
+  title: '%title%',
   icon: QrCodeIcon,
   viewContainer: QrCodeViewContainer,
-  activate: () => {},
-  components: [ manifest ]
+  activate: () => { },
+  components: [manifest],
+  locales: {
+    en: {
+      'title': 'QR Code'
+    },
+    'zh-CN': {
+      'title': '二维码'
+    }
+  }
 }
 
 // Default export for IIFE build
