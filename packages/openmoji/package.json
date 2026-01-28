@@ -1,6 +1,7 @@
 {
   "name": "@veltixapp/extension-openmoji",
   "version": "0.0.0",
+  "displayName": "%extension-openmoji%",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,7 +17,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@veltix/types": "^0.0.6",
+    "@veltix/types": "^0.0.7",
     "lucide-react": "^0.539.0",
     "react": "^19.1.1"
   },
@@ -32,5 +33,15 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "locales": {
+    "en": {
+      "extension-openmoji": "Openmoji",
+      "title": "Openmoji"
+    },
+    "zh-CN": {
+      "extension-openmoji": "Openmoji",
+      "title": "表情"
+    }
+  }
 }

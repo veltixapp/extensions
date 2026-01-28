@@ -1,6 +1,7 @@
 {
   "name": "@veltixapp/extension-qrcode",
-  "version": "0.0.0",
+  "displayName": "%extension-qrcode%",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,7 +17,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@veltix/types": "^0.0.6",
+    "@veltix/types": "^0.0.7",
     "lucide-react": "^0.539.0",
     "qr-code-styling": "^1.9.2",
     "react": "^19.1.1"
@@ -33,5 +34,15 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "locales": {
+    "en": {
+      "extension-qrcode": "QR Code",
+      "title": "QR Code"
+    },
+    "zh-CN": {
+      "extension-qrcode": "二维码",
+      "title": "二维码"
+    }
+  }
 }

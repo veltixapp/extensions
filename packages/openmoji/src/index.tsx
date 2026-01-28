@@ -7,19 +7,17 @@ export const openmojiExtension: Veltix.Extension = {
   id: 'openmoji',
   title: '%title%',
   icon: BoxIcon,
-  viewContainer: OpenmojiViewContainer,
+  main: OpenmojiViewContainer,
   activate: () => { },
-  components: [manifest],
+  exports: [manifest],
   locales: {
     en: {
-      'title': 'Openmoji'
+      "title": "Openmoji"
     },
-    'zh-CN': {
-      'title': '表情'
+    "zh-CN": {
+      "title": "表情"
     }
   }
 }
 
-export default {
-  openmojiExtension
-}
+export default openmojiExtension

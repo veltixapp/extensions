@@ -7,9 +7,9 @@ export const qrcodeExtension: Veltix.Extension = {
   id: 'qrcode',
   title: '%title%',
   icon: QrCodeIcon,
-  viewContainer: QrCodeViewContainer,
+  main: QrCodeViewContainer,
   activate: () => { },
-  components: [manifest],
+  exports: [manifest],
   locales: {
     en: {
       'title': 'QR Code'
@@ -21,6 +21,4 @@ export const qrcodeExtension: Veltix.Extension = {
 }
 
 // Default export for IIFE build
-export default {
-  qrcodeExtension
-}
+export default qrcodeExtension
