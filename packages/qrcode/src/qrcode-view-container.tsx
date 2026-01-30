@@ -13,7 +13,7 @@ export const QrCodeViewContainer = ({ context }: { context: Veltix.Context }) =>
           width: 260,
           height: 260,
         },
-        type: 'qrcode',
+        type: '@veltixapp/extension-qrcode',
         props: {
           text,
           src: base64
