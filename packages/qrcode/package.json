@@ -12,6 +12,9 @@
     "clean": "rm -rf dist",
     "dev": "npm run build:watch"
   },
+  "exports": {
+    "main": "./dist/qrcode.js"
+  },
   "keywords": [],
   "author": "Arvin Wei <clovery.org@gmail.com>",
   "license": "ISC",
